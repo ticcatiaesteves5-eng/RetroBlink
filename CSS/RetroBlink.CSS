@@ -1,0 +1,430 @@
+/* IMPORTAÇÃO DE FONTES - fontes utilizadas no site */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* CONFIGURAÇÕES GERAIS - estilo base do site */
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #f4efe7;
+    color: #2d2d2d;
+    margin: 0;
+    padding: 0;
+}
+
+/* TIPOGRAFIA - estilo dos títulos e do texto */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+b,
+strong {
+    font-weight: 500;
+}
+
+/* BARRA DE NAVEGAÇÃO - menu principal de todas as páginas */
+.navbar {
+
+    background: #2d241c;
+    border: none;
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar-nav {
+    margin-top: 25px;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #f5f1ea !important;
+
+    padding-top: 35px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #f5f1ea;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > .active > a {
+    color: #c89b63;
+    background: transparent;
+}
+
+/* LEITOR DE MÚSICA - componente para o leito de música da página início */
+.retro-player {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    width: 360px;
+    height: 75px;
+    background: rgba(20,15,10,0.95);
+    border: 1px solid #c89b63;
+    border-radius: 12px;
+    padding: 8px 12px;
+    color: white;
+}
+
+.player-title {
+    text-align: center;
+    color: #d6a76d;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.player-song {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.player-controls {
+    position: absolute;
+    right: 15px;
+    top: 35px;
+}
+
+.player-controls button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #d6a76d;
+    color: #d6a76d;
+    font-size: 22px;
+    border-radius: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.player-controls button:hover {
+    background: #d6a76d;
+    color: #1e160f;
+}
+
+/* CARROSSEL PRINCIPAL - slideshow apresentado na página início */
+.hero-logo{
+    width:150px;
+    height:auto;
+    border-radius:20px;
+    margin-bottom:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
+}
+
+.carousel {
+    margin-top: 100px;
+}
+
+.carousel-inner > .item {
+    height: 650px;
+}
+
+.carousel-inner > .item > img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-caption {
+    bottom: 120px;
+}
+
+.carousel-caption h1 {
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.carousel-caption p {
+    font-size: 22px;
+    color: white;
+}
+
+/* BANNER DAS PÁGINAS - utilizado nas páginas secundárias */
+.page-banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.banner-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.banner-overlay span {
+    color: #c89b63;
+}
+
+.banner-overlay p {
+    font-size: 24px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+/* SECÇÕES GERAIS - espaçamentos e blocos com informações */
+.intro-block {
+    background: #2d241c;
+    color: white;
+    padding: 80px 0;
+}
+
+.intro-block h1 {
+    color: white;
+}
+
+.text-muted {
+    color: #c89b63;
+}
+
+.tpad {
+    padding-top: 20px;
+}
+
+.padded {
+    padding: 80px 15px;
+}
+
+/* IMAGENS - configurações dss imagens do site */
+.img-circle {
+    border-radius: 50%;
+    max-width: 250px;
+    margin: 0 auto;
+    border: 4px solid #c89b63;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+/* CARROS EM DESTAQUE - cartões dos carros apresentados */
+.col-sm-4 h3 {
+    margin-top: 20px;
+}
+
+.col-sm-4 p {
+    color: #666;
+}
+
+.featured-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: 0.3s;
+}
+
+.featured-link:hover {
+    text-decoration: none;
+    color: inherit;
+    transform: translateY(-8px);
+}
+
+.featured-link img {
+    transition: 0.3s;
+}
+
+.featured-link:hover img {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.featured-link h3 {
+    color: #2d241c;
+}
+
+.featured-link:hover h3 {
+    color: #c89b63;
+}
+
+/* REDES SOCIAIS - ícones e estilo das redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 10px;
+}
+
+.rede-social {
+    text-align: center;
+}
+
+.rede-social a {
+    color: #8b5e34;
+    font-size: 65px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.rede-social a:hover {
+    color: #c89b63;
+}
+
+.rede-social p {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #2d241c;
+    font-weight: 500;
+}
+
+/* SECÇÃO SOBRE NÓS - blocos de informação sobre o site e a equipa */
+.marketing {
+    background: #e8dfd2;
+    padding: 70px 0;
+}
+
+.marketing h3 {
+    color: #2d241c;
+}
+
+.marketing p {
+    color: #444;
+}
+.marketing h3 a {
+    color: #c89b63;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.marketing h3 a:hover {
+    color: #a97b48;
+    text-decoration: underline;
+}
+
+/* CONTACTOS E MAPA - para o formulário de contacto, informações e localização */
+.info {
+    background: #c89b63;
+    color: white;
+    padding: 80px 0;
+}
+
+.info h2,
+.info p {
+    color: white;
+}
+
+.map {
+    height: 450px;
+    width: 100%;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 1px solid #d8cdbf;
+}
+
+.form-control:focus {
+    border-color: #c89b63;
+    box-shadow: none;
+}
+
+/* BOTÕES - para os botões utilizados no site */
+
+.btn-primary {
+    background: #c89b63;
+    border-color: #b58955;
+}
+
+.btn-primary:hover {
+    background: #a97b48;
+    border-color: #a97b48;
+}
+
+.btn-default {
+    background: white;
+    border-color: white;
+}
+
+.btn-default:hover {
+    background: #f4efe7;
+}
+
+/* RODAPÉ - informação do final de todas as páginas */
+
+.ftr {
+    background: #2d241c;
+    color: white;
+    padding: 50px 0;
+}
+
+.ftr h3 {
+    color: white;
+}
+
+.ftr p {
+    color: rgba(255,255,255,0.8);
+}
+
+.col-sm-4 img {
+    margin-bottom: 15px;
+}
+
+.col-sm-4 {
+    margin-bottom: 40px;
+}
+
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* VÍDEOS - estilo aplicado aos vídeos dos carros em destaques */
+video{
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVIDADE - ajustes para telemóveis e tablets */
+@media (max-width: 768px) {
+
+    .carousel-inner > .item {
+        height: 400px;
+    }
+
+    .carousel-inner > .item > img {
+        height: 400px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 38px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .intro-block {
+        text-align: center;
+    }
+}
